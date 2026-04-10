@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.div input{
+  display: grid;
+  place-items: center;
+}
+.button{
+  background-color: aquamarine;
+}
+
+

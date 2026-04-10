@@ -1,0 +1,89 @@
+/* Admin Global Styles */
+.admin-container {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+/* Sidebar Styling */
+.admin-sidebar {
+    width: 260px;
+    background: #111; /* Deep Black */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #333;
+    z-index: 1000;
+}
+
+.admin-sidebar .nav-link {
+    color: #aaa;
+    padding: 15px 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    margin: 5px 15px;
+}
+
+.admin-sidebar .nav-link:hover, 
+.admin-sidebar .nav-link.active {
+    background: #ffc107; /* Shoe Vault Yellow */
+    color: #000 !important;
+    transform: translateX(5px);
+}
+
+/* Content Area Area */
+.admin-main {
+    margin-left: 260px;
+    padding: 40px;
+    background: #f8f9fa;
+}
+
+/* Premium Card Design */
+.admin-card {
+    background: #fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Stats Cards */
+.stat-border-yellow { border-left: 6px solid #ffc107; }
+.stat-border-blue { border-left: 6px solid #0d6efd; }
+.stat-border-green { border-left: 6px solid #198754; }
+
+/* Table Styling */
+.admin-table thead {
+    background: #111;
+    color: #fff;
+}
+
+.admin-table th {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+
+.admin-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Form Controls */
+.admin-input {
+    border-radius: 10px;
+    border: 2px solid #eee;
+    padding: 12px;
+}
+
+.admin-input:focus {
+    border-color: #ffc107;
+    box-shadow: none;
+}
