@@ -544,7 +544,7 @@ const updateQuantity = async (productId, amount) => {
         <Routes>
           <Route path="/login" element={<PublicRoute isLoggedIn={isLoggedIn}><Login handleLogin={handleLogin} /></PublicRoute>} />
           <Route path="/register" element={<PublicRoute isLoggedIn={isLoggedIn}><Register /></PublicRoute>} />
-          
+            <Route path="/forgot-password" element={<PublicRoute isLoggedIn={isLoggedIn}><ForgotPassword /></PublicRoute>} />
           <Route path="/admin/login" element={<AdminLogin setAdminAuth={setIsAdminAuthenticated} />} />
           <Route path="/admin" element={isAdminAuthenticated ? <AdminLayout /> : <Navigate to="/admin/login" />}>
             <Route index element={<AdminDashboard />} />
